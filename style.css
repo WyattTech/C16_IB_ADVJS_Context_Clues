@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsla(240, 2%, 25%, 1);
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F20somethingfinance.com%2Fwp-content%2Fuploads%2F2015%2F10%2FCLUE-Report.jpg&f=1&nofb=1) repeat;
+  background: linear-gradient(
+    90deg,
+    hsla(240, 2%, 25%, 1) 41%,
+    hsla(303, 45%, 34%, 0.3) 72%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(240, 2%, 25%, 1) 41%,
+    hsla(303, 45%, 34%, 0.3) 72%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(240, 2%, 25%, 1) 41%,
+    hsla(303, 45%, 34%, 0.3) 72%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3F3F42", endColorstr="#7D2F79", GradientType=1 );
+  color: bisque;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 3rem;
+}
+
+h3{
+  margin: 1rem;
+  padding: 0.25rem;
+  font-size: 2.1rem;
+  font-weight: bolder;
+}
+#header {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+  background-color: rgb(238, 181, 37);
+  font-size: 3.5rem;
+  letter-spacing: 1rem;
+  line-height: 5rem;
+  font-weight: bolder;
+  font-family:'Nosifer';
+  text-shadow:
+  4px 4px 1px #300000,
+  4px 6px 1px #400000,
+  4px 8px 1px #500000,
+  4px 10px 1px #600000,
+  4px 12px 1px #700000,
+  4px 14px 1px #800000,
+  4px 16px 1px #900000,
+  4px 18px 1px #A00000,
+  4px 20px 1px #B00000,
+  4px 22px 1px #C00000;
+  
+}
+
