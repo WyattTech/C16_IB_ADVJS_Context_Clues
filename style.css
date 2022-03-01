@@ -47,7 +47,7 @@ h3{
 #header {
   display: flex;
   justify-content: center;
-  padding: 4rem;
+  padding: 3rem;
   background-color: rgb(238, 181, 37);
   font-size: 3.5rem;
   letter-spacing: 1rem;

@@ -5,18 +5,19 @@ document.addEventListener("DOMContentLoaded", function(){
    document.body.prepend(newDiv);
    var accusations = "Accusation ";
    var count = 1;
-
-   for (var i = 0; i < 200; i++) {
     
+   for (var i = 0; i < 200; i++) {
+     
     var newSpan = document.createElement('span');
     var newH3 = document.createElement('h3');
     i++;
     newH3.className = "ahaMoment"
     newH3.textContent = accusations;
-    newSpan.innerHTML = count;
+    var h3Text = newH3.textContent;
+    newSpan.innerHTML = " " + count;
     count++;
     newH3.appendChild(newSpan);
-    var h3Text = newH3.textContent;
+    
     
     newDiv.append(newH3)
     newH3.style.fontFamily = 'PT Sans Narrow';
@@ -24,6 +25,11 @@ document.addEventListener("DOMContentLoaded", function(){
     
     newH3.addEventListener('click', function(){
       function myFunction() { 
+         if (count <= 200) {
+            count++;
+         } else{
+            return;
+         }
        i++;  
        var friendArr = ['Ronnie', 'Ricky',  'Bobbie', 'Mike', 'Ralph'];
        var locationArr = ['hallway', 'garage', 'kitchen', 'patio', 'car', 'pool', 'bedroom', 'den', 'study', 'rec room'];
@@ -31,17 +37,17 @@ document.addEventListener("DOMContentLoaded", function(){
        
       
        
-       var whoDidIt = h3Text  + " : " + " I accuse " + friendArr[i % 5] + " with the " + weaponArr[i % 20] + " in the " + locationArr[i % 10] + " .";
+         var whoDidIt = h3Text +  [count - 101] +  " : " + " I accuse " + friendArr[i % 5] + " with the " + weaponArr[i % 20] + " in the " + locationArr[i % 10] + " !";
        
        alert(whoDidIt);
        
-       console.dir(myFunction);
+       
    } myFunction(); 
    
 });
 
-
-   }  
+   } 
+ 
 var header = document.createElement('header');
 var newH1 = document.createElement('h1');
 var newImg = document.createElement('img');
